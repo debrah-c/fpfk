@@ -52,7 +52,7 @@ button{
     font-weight: bold;
 }
 .services{
-    background-image: url(teaphoto.jpg);
+    background-image: url(images/tea-photo.jpg);
     background-position: center;
     padding:20px;
     display:flex;
@@ -78,7 +78,7 @@ button{
 }
 .pictorials{
     display:grid;
-    grid-template-columns: 300px 300px 300px 300px 300px;
+    grid-template-columns: repeat(5,1fr);
     gap:10px;
     justify-content: center;
     
@@ -88,6 +88,7 @@ button{
     justify-content: center;
     font-size:30px;
 }
+
 .right-column{
     display:flex;
     align-items: flex-start;
@@ -107,8 +108,14 @@ button{
 
 }
 img{
-    width: 300px;
-    height:auto;
+    width:100%;
+    height: auto;
+}
+.events{
+    background-color:ghostwhite;
+    text-align: center;
+    padding:10px;
+    font-size: 20px;
 }
 .footer {
     background-color: aliceblue;
@@ -126,4 +133,37 @@ img{
 .footer p {
     margin: 0.3rem 0;
     opacity: 0.75;
+}
+@media (max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .pictorials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services {
+        padding: 10px;
+    }
+
+    .welcome-message {
+        padding: 15px;
+        font-size: 18px;
+    }
 }
