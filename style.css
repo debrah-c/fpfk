@@ -19,7 +19,7 @@ main{
 
 h1{
     color:darkblue;
-    font-size: 50px;
+    font-size: 30px;
 }
 .center,
 .text{
@@ -137,7 +137,7 @@ img{
 @media (max-width: 768px) {
 
     .main-container {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
@@ -151,7 +151,7 @@ img{
     }
 
     .container {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .pictorials {
