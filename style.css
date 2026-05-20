@@ -146,7 +146,6 @@ img{
     .links {
         flex-direction: row;
         gap: 2px;
-        flex-wrap: wrap;
         justify-content: flex-end;
     }
     .links li {
