@@ -19,12 +19,12 @@ main{
 
 h1{
     color:darkblue;
-    font-size: 30px;
+    font-size: 20px;
 }
 .center,
 .text{
     color: darkblue;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .text{
@@ -37,7 +37,7 @@ h1{
     margin:10px;
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     display:flex; 
     flex-direction: column;
 }
@@ -66,7 +66,7 @@ button{
     font-size: 20px;
 }
 .services h3{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .center {
@@ -142,8 +142,8 @@ img{
     }
 
     .links {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        gap: 5px;
     }
 
     h1 {
