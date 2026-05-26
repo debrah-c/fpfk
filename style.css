@@ -21,6 +21,9 @@ h1{
     color:darkblue;
     font-size: 20px;
 }
+.harmbuger{
+    display:none;
+}
 .center,
 .text{
     color: darkblue;
@@ -142,14 +145,21 @@ img{
         gap:5px;
         padding:10px;
     }
-
+    .harmbuger span{
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: darkblue;
+        border-radius: 3px;
+}
+    }
     .links {
         flex-direction: row;
         gap: 2px;
         justify-content: flex-end;
     }
     .links li {
-        font-size: 9px;
+        font-size: 10px;
     }
     .logo img{
         width: 50px;
@@ -178,6 +188,6 @@ img{
 
     .welcome-message {
         padding: 15px;
-        font-size: 18px;
+        font-size: 15px;
     }
 }
