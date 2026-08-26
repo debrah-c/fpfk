@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>FPFK KERICHO TOWN CHURCH</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -15,72 +15,381 @@
                 <div class="center">
                     <h1>FPFK KERICHO TOWN CHURCH</h1>
                     <div class ="text">A place to experience life in abundance.</div>
-                </div>
-
+                </div> 
+            <!--HAMBURGER BUTTON-->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <!--RIGHT-COLUMN-->
-            <div class = "right-column">
-                <ul class = "links">
-                    <li>ABOUT</li>
-                    <li>DEVOTIONALS</li>
-                    <li>MINISTRIES</li>
-                    <li>SERMONS</li>
-                    <li>GIVE</li>
+            <nav class="right-column" id="nav-links">
+                <ul class="links">
+                    <li><a href="#" onclick="showSection(event, 'home-section')">HOME</a></li>
+                    <li><a href="#" onclick="showSection(event, 'about-section')">ABOUT</a></li>
+                    <li><a href="#" onclick="showSection(event, 'devotional-section')">DEVOTIONAL</a></li>
+                    <li><a href="#" onclick="showSection(event, 'ministries-section')">MINISTRIES</a></li>
+                    <li><a href="#" onclick="showSection(event,'give-section')">GIVE</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
 
-        <main>
-            <div class="welcome-message">
-                <h3>Welcome to FPFK KERICHO TOWN CHURCH!</h3>
-                <text>At FPFK KERICHO TOWN CHURCH, we believe every person who walks through our doors is a gift. We are a family of passionate Christ-followers who take our faith seriously — and our love for people even more so. If you've been looking for a place where you truly belong, look no further. We are located at Duka Moja, Kericho.Come visit us and experience the difference a loving church community can make in your life.</text>
-                <div class="button">
-                    <button type="button">PLAN YOUR VISIT</button>
-                    <button type="button">WATCH SERMONS</button>
+        <main class="content-wrapper">
+
+            <!--ABOUT SECTION-->
+            <section id="about-section" class="page-section">
+                <div class="about-message">
+                    <p>
+                        Founded on the word God and built on Christ Jesus as the solid foundation, FPFK Kericho Town Church is a vibrant Pentecostal community dedicated to preaching the Gospel and serving the spiritual, economic and social needs of our people.
+                        Under the pastoral leadership of Rev Gideon Yegon, we are commited to creating a dynamic church of God-fearing believers who know Jesus Christ intimately and are holistically transformed by His Grace.
+                    </p>
                 </div>
-            </div>
-        </div>
-            <div class="services">
-                <h3>OUR SERVICES</h3>
-                <div class="container">
-                    <ul class="Midweek-services">
-                        <h4>Midweek Services</h4>
-                        <li>Wednesday service:8PM-9PM</li>
-                        <li>Saturday Fellowship:4PM-6PM</li>
-                    </ul>
-                    <ul class="sunday">
-                        <h4>Sunday Service</h4>
-                        <li>Intercessory:9AM-10AM</li>
-                        <li>Main Service:10AM-12PM</li>
-                    </ul>
+                <div class="history">
+                    <h4>THE HISTORY OF FPFK KERICHO TOWN CHURCH</h4>
+                    <p>
+                        FPFK Kericho Town Church is part of the larger Free Pentecostal Fellowship in Kenya(FPFK), a vibrant evangelical denomination with rootes dating back to 1955. Officially started on 3rd January 2016, we have grown to become a beacon of spiritual light in the Kericho community, serving believers and reaching out to the lost with the message of Jesus Christ.
+                        Every great journey begins with a step of faith, and ours began with just a handful of people who believed that God was about to do something meaningful. On 3rd January 2016, we gathered for the first time at Quick Service Restaurant, carrying with us a simple but powerful desire — to worship God, grow together, and become a community where lives could be transformed by His love.
+                        At the time, we could not see how far the journey would take us. What began as a small gathering was filled with hope, prayer, and a deep trust in God. We knew that the road ahead would not always be easy, but we chose to move forward, believing that God would lead us every step of the way.
+                        As the church grew, so did our need for a place where we could worship and fellowship together. In 2017, we moved to Oryx, marking another important chapter in our story. It was a season of growth, learning, and building relationships. Through every change and every challenge, God continued to provide, reminding us that the strength of the church is not found only in its building, but in the people and the faith that bring them together.
+                        Then, in 2018, another significant chapter began. We settled at Duka Moja, the place we continue to call home today. What may have once seemed like a small beginning had grown into a community of believers united by faith, fellowship, service, and a desire to see God's work continue.
+                        Through the years, we have experienced seasons of joy and seasons that tested our faith. We have celebrated answered prayers, witnessed lives changed, welcomed new families, and walked alongside one another through difficult moments. Through it all, one thing has remained constant: God has been faithful.
+                        Looking back at where we began, we are reminded that God does not despise small beginnings. The handful of people who gathered at Quick Service Restaurant in 2016 could not have known what God had in store. Yet, step by step, He opened doors, provided opportunities, brought people together, and allowed the ministry to grow.
+                        Today, as we gather at Duka Moja, we do so with grateful hearts. We remember where we came from, we celebrate how far God has brought us, and we look forward with faith to where He is leading us next.
+                        What God started, He has continued to grow. And our story is still being written.
+
+                    </p>
                 </div>
-            </div>
-            <h3 class="pictorials-title">PICTORIALS</h3>
-            <div class="pictorials">
-                <img src ="images/Church-photo.jpeg" alt ="Members">
-                <img src="images/Mothers.jpg" alt="Mothers">
-                <img src="images/Mothers2.jpg">
-                <img src="images/Church2.jpg">
-                <img src="images/Church.jpg">
-                <img src="images/CHURCH.jpg">
-                <img src="images/church1.jpg">
-                <img src="images/Lenny.jpg">
-                <img src="images/IMG_4206.jpg">
-                <img src="images/Hillary.jpg">    
-            </div>
-            <div class="events">
-                <h4>UPCOMING EVENTS</h4>
-                <p>Prayer and Fasting Week:25/05/2026 - 31/05/2026</p>
-            </div>
+                <div class="vision-mission">
+                    <div class="vision">
+                        <h4>OUR VISION</h4>
+                        <p>A strong pentecostal church meeting the needs of the society holistically based on christian values.</p>
+                    </div>
+                    <div class="mission">
+                        <h4>OUR MISSION</h4>
+                        <p>To preach the word of God to all nations in preparation for the second coming of the Lord Jesus Christ by reaching out and establishing churches which can meet the spriritual, economic and social needs of the people through evangelism, education, training and socio economic activities based on christian values.</p>
+                    </div>
+                    <div class="values">
+                        <h4>Core Values</h4>
+                        <p>FPFK is guided by six foundational values that shape our identities:</p>
+                        <ul>
+                            <li>Love:Expressing God's love to all people.</li>
+                            <li>Intergrity:Operating with honesty and moral uprightness.</li>
+                            <li>Obedience:Following God's word faithfully.</li>
+                            <li>Humility:Serving with a humble and teachable spirit.</li>
+                            <li>Unity:Standing together as one body in Christ.</li>
+                            <li>Stewardship:Managing God's resources responsibly.</li>
+                        </ul>
+                    </div>
+                    <div class="location">
+                    <h4>OUR LOCATION AND CONTACT</h4>
+                    <p>
+                        Address: Duka Moja, Kericho, Kenya.
+                        Phone: +25415598143
+                        Email: fpfkkerichotownc@gmail.com
+                    </p>
+                </div>
+                </div>
+            </section>
+
+            <!--DEVOTIONALS SECTIONS-->
+            <section id="devotional-section" class="page-section">
+                <div class="shelf">
+                    <div class="shelf-title">
+                        <h4>DEVOTIONALS</h4>
+                    </div>
+                    
+                    <div class="download-container">
+                        <a href="documents/Building A Home That Prospers.pdf" download="Building a home that prospers" class="book b21">
+                             <span class="tag">PDF</span>
+                             <div class="cover">
+                                <span class="kind">Home &amp; prosperity</span>
+                                <span class="title">Building a Home That Prospers</span>
+                            </div>
+                        </a>
+                        <a href="documents/How money responds.docx.pdf" download="How money responds" class="book b2">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Money</span>
+                                <span class="title">How Money Responds</span>
+                            </div>
+                        </a>
+                        <a href="documents/Navigating Motherhood.docx.pdf" download="Navigating Motherhood" class="book b3">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Motherhood</span>
+                                <span class="title">Navigating Motherhood</span>
+                            </div>
+                        </a>
+                        <a href="documents/Near With The Lips.docx.pdf" download="Near with the lips" class="book b4">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Faith</span>
+                                <span class="title">Near With the Lips</span>
+                            </div>
+                        </a>
+                        <a href="documents/Institutional Demons.pdf" download="Institutional Demons" class="book b5">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Spiritual</span>
+                                <span class="title">Instituional Demons</span>
+                            </div>
+                        </a>
+                        <a href="documents/Spiritual Altars.docx" download="Spriritual Altars" class="book b6">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Spiritual</span>
+                                <span class="title">Spiritual Altars</span>
+                            </div>
+                        </a>
+                        <a href="documents/The Power to Get Wealth.pdf" download="The Power to Get Wealth" class="book b7">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Money</span>
+                                <span class="title">The Power to Get Wealth</span>
+                            </div>
+                        </a>
+                        <a href="documents/Build The House of God.pdf" download="Build The House of God" class="book b8">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Spiritual</span>
+                                <span class="title">Build The House of God</span>
+                            </div>
+                        </a>
+                        <a href="documents/Isaiah 43.pdf" download="Isaiah 43" class="book b9">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Faith</span>
+                                <span class="title">Isaiah 43</span>
+                            </div>
+                        </a>
+                        <a href="documents/Manna to Promised Land.pdf" download="Manna to Promised Land" class="book b10">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Spiritual</span>
+                                <span class="title">Manna to Promise Land</span>
+                            </div>
+                        </a>
+                        <a href="documents/Names Changed, Destinies Changed.pdf" download="Names Changed, Destinies Changed" class="book b11">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Faith</span>
+                                <span class="title">Names Changed, Destinies Changed</span>
+                            </div>
+                        </a>
+                        <a href="documents/Not by Might Not by Power.pdf" download="Not by Might Not by Power" class="book b12">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Spiritual</span>
+                                <span class="title">Not by Might Not by Power</span>
+                            </div>
+                        </a>
+                        <a href="documents/Pastoral Exhortation:Ministry Context.pdf" download="Pastoral Exhortation:Ministry Context" class="book b13">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Ministry</span>
+                                <span class="title">Pastoral Exhortation:Ministry Context</span>
+                            </div>
+                        </a>
+                        <a href="documents/Road to Financial Freedom.pdf" download="Road to Financial Freedom" class="book b14">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Money</span>
+                                <span class="title">Road to Financial Freedom</span>
+                            </div>
+                        </a>
+                        <a href="documents/Running to Win.pdf" download="Running to Win" class="book b15">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Purpose</span>
+                                <span class="title">Running to Win</span>
+                            </div>
+                        </a>
+                        <a href="documents/Youth Exhortation:Rise and Build.pdf" download="Youth Exhortation:Rise and Build" class="book b16">
+                            <span class="tag">PDF</span>
+                            <div class="cover">
+                                <span class="kind">Youth</span>
+                                <span class="title">Youth Exhortation:Rise and Build</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--MINISTRIES SECTIONS-->
+            <section id="ministries-section" class="page-section">
+                <h4>SUNDAY SCHOOL MINISTRY</h4>
+                <div class="card-container">
+                    <div class="card">
+                        <p>
+                            Matthew 19:14
+                            [14]But Jesus said, “Let the little children come to Me, and do not forbid them; for of such is the kingdom of heaven.
+                        </p>
+                    </div>
+                </div>
+                <div class="children-img">
+                    <img src="images/children-1.jpg" alt="Children">
+                    <img src="images/children 2.jpg" alt="Children">
+                    <img src="images/children.jpg" alt="Children">
+                    <img src="images/Sunday School.jpeg" alt="Children">
+                    <img src="images/Children3.jpeg" alt="Children">
+                    <img src="images/Children4.jpeg" alt="Children">
+                </div>
+        
+
+            <!--YOUTH MINISTRY-->
+    
+                <h4>YOUTH MINISTRY</h4>
+                <div class="card-container">
+                    <div class="card">
+                        <p>
+                            Psalms 119:9: How can a young man cleanse his way? By taking heed according to Your word.
+                        </p>
+                    </div>
+                </div>
+            
+
+            <!--WOMEN MINISTRY SECTION-->
+                <h4>WOMEN MINISTRY</h4>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/Mothers.jpg" alt="Mothers">
+                        <p>
+                            Proverbs 31:25-29
+                            [25]Strength and honor are her clothing; She shall rejoice in time to come.
+                            
+                        </p>
+                    </div> 
+                </div>
+                <div class="women-img">
+                    <img src="images/Mothers.jpg" alt="Mothers">      
+                </div>
+            
+
+            <!--MEN MINISTRY-->
+                <h4>MEN MINISTRY</h4>
+                <div class="card">
+                    <p>
+                        Psalms 1:1-3
+                        [1]Blessed is the man Who walks not in the counsel of the ungodly, Nor stands in the path of sinners, Nor sits in the seat of the scornful;
+                        [2]But his delight is in the law of the Lord, And in His law he meditates day and night.
+                        [3]He shall be like a tree Planted by the rivers of water, That brings forth its fruit in its season, Whose leaf also shall not wither; And whatever he does shall prosper.
+                    </p>
+                </div>
+            </section>
+
+            <!--GIVE SECTION-->
+            <section id="give-section" class="page-section">
+                <h4>GIVE</h4>
+
+            </section>
+        
+
+            <!--HOME SECTION-->
+            <section id="home-section" class="page-section active-section">
+                <div class="welcome-message">
+                    <h3>Welcome to FPFK KERICHO TOWN CHURCH!</h3>
+                    <text>At FPFK Kericho Town Church, we stand as a testament to God's faithfulness and the transformative power of the Gospel. As we continue with our journey of faith, we invite you to join us in experiencing life in abundance through Jesus Christ. Whether you are seeking spiritual growth, community or simply a place to encounter God's love,FPFK Kericho Town Church welcomes you with open arms.</text>
+                        <div class="button">
+                            <button type="button" onclick="openModal('visitModal')">PLAN YOUR VISIT</button>
+                        </div>
+                        <!--Modal form-->
+                        <div class="modal-overlay" id="visitModal">
+                            <div class="modal-box">
+                                <div class="modal-header">
+                                    <h3>Plan Your Visit</h3>
+                                    <p>We'd love to welcome you. Let us know when you are coming.</p>
+                                </div>
+                                <button type="button" onclick="closeModal('visitModal')">&times</button>
+                    
+                                <!--Form-->
+                                <form id="form-visit" onsubmit="">
+                                    <label for="fullName"></label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+                                    <label for="phone"></label>
+                                    <input type="number" id="phone" name="phone" placeholder="Phone Number">
+
+                                    <label for="email"></label>
+                                    <input type="email" id="email" name="email" placeholder="Email">
+
+                                    <label for="visitMessage"></label>
+                                    <textarea id="visitMessage" name="visitMessage" placeholder="When do you plan to visit?" rows="3"></textarea>
+
+                                    <button type="submit" class="modal-submit">Confirm My Visit</button>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+    
+                <div class="services">
+                    <h3>OUR SERVICES</h3>
+                    <div class="container">
+                        <ul class="Midweek-services">
+                            <h4>Midweek Services</h4>
+                            <li>Wednesday service:8PM-9PM</li>
+                            <li>Saturday Fellowship:4PM-6PM</li>
+                        </ul>
+                        <ul class="sunday">
+                            <h4>Sunday Service</h4>
+                            <li>Intercessory:9AM-10AM</li>
+                            <li>Main Service:10AM-12PM</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="pictorials-title">MOMENTS WITH US:</h3>
+                <div class="pictorials">
+                    <img src ="images/Church-photo.jpeg" alt ="Members">
+                    <img src="images/Mothers.jpg" alt="Mothers">
+                    <img src="images/Mothers2.jpg" alt="Member">
+                    <img src="images/Church2.jpg" alt="Member">
+                    <img src="images/Church.jpg" alt="Member">
+                    <img src="images/CHURCH.jpg" alt="Member">
+                    <img src="images/church1.jpg" alt="Member">
+                    <img src="images/Lenny.jpg" alt="Member">
+                    <img src="images/IMG_4206.jpg" alt="Member">
+                    <img src="images/Hillary.jpg" alt="Member">  
+                    <img src="images/Members1.jpeg" alt="Member">
+                    <img src="images/Instrumentalists.jpeg" alt="Member">
+                    <img src="images/Jackie.jpeg" alt="Member">
+                    <img src="images/Members2.jpeg" alt="Member">
+                    <img src="images/Members3.jpeg" alt="Member">
+                    <img src="images/Members4.jpeg" alt="Member">
+                    <img src="images/Members5.jpeg" alt="Member">
+                    <img src="images/ME.jpeg" alt="Member">
+                    <img src="images/Praise and worship1.jpeg" alt="Member">
+                    <img src="images/Worship.jpeg" alt="Member">
+                </div>
+                <div class="pastoral-care">
+                    <h3>PRAYER AND PASTORAL CARE</h3>
+                    <p>Mark 12:30-And the second, like it, is this: You shall love your neighbor as yourself. There is no other commandment greater than these.</p>
+                    <p>Whether you're a member, a visitor, or part of our wider community, we want you to know that you are valued and loved. No matter what season of life you are facing, our pastoral care team is here to support and encourage you.
+                        We offer prayer support, individual and marriage counselling, hospital and home visits, and bereavement care. Whatever your need, you don't have to walk through it alone. Reach out to us—we would be honoured to journey alongside you.
+                    </p>
+                    <div class="pastors">
+                        <h3>OUR PASTORAL TEAM</h3>
+                        <div class="pastor-image">
+                            <div class="pastor">
+                                <img src="images/Pastor.jpg" alt="Senior Pastor">
+                                <p>Senior Pastor:Rev Gideon Yegon</p>
+                            </div>
+                            <div class="pastor">
+                                <img src="images/Lenny.jpg" alt="Assistant Pastor">
+                                <p>Assistant Pastor: Pastor Leonard Ngeny</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCG-HemRvNPVJ3Omeu3Z1y4Lv6k8Q20cJnhgUs9x75cewBBg/viewform?embedded=true" target="blank" class="care-button">Request Pastoral Care</a>
+                </div>
+            </section>
         </main>
 
         <div class ="footer">
             <div class="contacts">
                 <h5>FPFK KERICHO TOWN CHURCH</h5>
                 <p>+254715598143</p>
+                <p>fpfkkerichotownc@gmail.com</p>
             </div>
             <p>&copy; FPFK KERICHO TOWN CHURCH</p>
         </div>
-        
+        <script src="script.js"></script>
     </body>
 </html>
             
