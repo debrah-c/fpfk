@@ -1,5 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: sans-serif;
+    margin:24px;
 }
 main{
     flex:1; /*pushes the footer down.*/
@@ -16,7 +20,172 @@ main{
     top:0;
 
 }
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    position: absolute; 
+    top: 100%; /*Positions it directly below the parent link*/
+    left:0;
+    margin:0;
+    list-style: none;
+    padding:10px;
+    gap:10px;
+    background-color:#ffffff;
+    min-width:180px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    /* Hides the content by default. */
+    display:none;
+    z-index: 1000;
 
+    
+}
+.dropdown-content a{
+    color:darkblue;
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content li a{
+    text-decoration: none;
+}
+.card-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    gap:30px;
+}
+.children-img{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    padding:10px;
+}
+.card{
+    background-color: lavenderblush;
+    padding:10px;
+    margin:2px;
+    border-bottom-left-radius:5px;
+    border-top-right-radius: 5px;
+    width:500px;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.page-section{
+    display: none;
+    padding:20px;
+    
+
+}
+.active-section{
+    display:block;
+}
+.download-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    padding:10px;
+
+}
+.shelf-title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    
+}
+.children-img img{
+    width:200px;
+    height:auto;
+}
+.vision-mission p{
+    text-align:center;
+    font-weight: bold;
+    font-family: Arial;
+}
+.shelf{
+  margin:0;
+  padding:64px 24px;
+  background:radial-gradient(ellipse at 50% -10%, #ffffff 0%, #ffffff 70%);
+  font-family:'Inter',sans-serif;
+}
+.cover{
+  position:relative;
+  height:210px;
+  border-radius:3px 7px 7px 3px;
+  padding:20px 16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  box-shadow:
+    inset 3px 0 0 rgba(0,0,0,0.25),
+    inset -1px 0 0 rgba(255,255,255,0.08),
+    0 10px 18px rgba(0,0,0,0.4);
+  transition:box-shadow 260ms ease;
+  }
+.kind{
+  font-size:10.5px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  font-weight:600; 
+  opacity:0.85;
+}
+
+.title{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:18px;
+  line-height:1.28;
+}
+.tag{
+  position:absolute;
+  top:-10px;
+  right:18px;
+  background:var(--cream);
+  color:var(--wood-dark);
+  font-size:10.5px;
+  font-weight:600;
+  letter-spacing:0.05em;
+  padding:5px 9px 6px;
+  border-radius:0 0 4px 4px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.3);
+  opacity:0;
+  transform:translateY(-6px);
+  transition:opacity 220ms ease, transform 220ms ease;
+}
+.book:hover{ transform:translateY(-16px) rotate(-1.5deg); }
+.book:hover .cover{ box-shadow: inset 3px 0 0 rgba(0,0,0,0.25), inset -1px 0 0 rgba(255,255,255,0.08), 0 26px 30px rgba(0,0,0,0.5); }
+.book:hover .tag{ opacity:1; transform:translateY(0); }
+.book:focus-visible .cover{ outline:2px solid var(--cream); outline-offset:3px; }
+
+.b1 .cover{ background:linear-gradient(155deg, var(--home), var(--home-dark)); }
+.b2 .cover{ background:linear-gradient(155deg, var(--money), var(--money-dark)); }
+.b3 .cover{ background:linear-gradient(155deg, var(--mother), var(--mother-dark)); }
+.b4 .cover{ background:linear-gradient(155deg, var(--faith), var(--faith-dark)); }
+.b5 .cover{ background:linear-gradient(155deg, var(--spiritual), var(--spiritual-dark)); }
+.b6 .cover{ background:linear-gradient(155deg, var(--spiritual), var(--spiritual-dark)); }
+.b7 .cover{ background:linear-gradient(155deg, var(--money), var(--money-dark)); }
+.b8 .cover{ background:linear-gradient(155deg, var(--spiritual), var(--spiritual-dark)); }
+.b9 .cover{ background:linear-gradient(155deg, var(--faith), var(--faith-dark)); }
+.b10 .cover{ background:linear-gradient(155deg, var(--spiritual), var(--spiritual-dark)); }
+.b11 .cover{ background:linear-gradient(155deg, var(--faith), var(--faith-dark)); }
+.b12 .cover{ background:linear-gradient(155deg, var(--spiritual), var(--spiritual-dark)); }
+.b13 .cover{ background:linear-gradient(155deg, var(--ministry), var(--ministry-dark)); }
+.b14 .cover{ background:linear-gradient(155deg, var(--money), var(--money-dark)); }
+.b15 .cover{ background:linear-gradient(155deg, var(--purpose), var(--purpose-dark)); }
+.b16 .cover{ background:linear-gradient(155deg, var(--youth), var(--youth-dark)); }
+.b1 .kind, .b1 .title, .b2 .kind, .b2 .title, .b3 .kind, .b3 .title, .b4 .kind, .b4 .title, b5 .kind, b5 .title, b6 .kind, b6 .title, b7 .kind, b7 .title, b8 .kind, b8 .title, b9 .kind, b9 .title, b10 .kind, b10 .title, b11 .kind, b11 .title, b12 .kind, b12 .title, b13 .kind, b13 .title, b14 .kind, b14 .title, b15 .kind, b15 .title, b16 .kind, b16 .title{ color:var(--cream); }
+
+
+
+h4{
+    text-align: center;
+    color:darkblue;
+    font-size: 20px;
+}
 h1{
     color:darkblue;
     font-size: 20px;
@@ -54,10 +223,80 @@ button{
     background-color:lavender;
     font-weight: bold;
 }
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 28px 24px;
+  max-width: 420px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal-header button{
+    align-self:flex-end ;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #555;
+}
+.modal-submit{
+    margin-top: 18px;
+    padding: 12px;
+    background: #241F1A;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-submit:hover {
+  opacity: 0.9;
+}
+
+#form-visit{
+    display:flex;
+    flex-direction: column;
+    gap:10px
+    
+}
+#form-visit input,text-area{
+    padding:10px;
+}
 .services{
     background-image: url(images/tea-photo.jpg);
     background-position: center;
-    padding:20px;
+    padding:50px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +321,7 @@ button{
 .pictorials{
     display:grid;
     grid-template-columns: repeat(5,1fr);
-    gap:10px;
+    gap:5px;
     justify-content: center;
     
 }
@@ -101,9 +340,13 @@ button{
 .links{
     display:flex;
     flex-direction: row;
-    list-style: none;
+    list-style:none;
+    text-decoration: none;
     gap:30px;
     justify-content: space-evenly;
+}
+.links li a{
+    text-decoration: none;
 }
 .logo img{
     width:150px;
@@ -112,7 +355,9 @@ button{
 }
 img{
     width:100%;
-    height: auto;
+    height:200px;
+    object-fit: cover;
+
 }
 .events{
     background-color:ghostwhite;
@@ -121,15 +366,15 @@ img{
     font-size: 20px;
 }
 .footer {
-    background-color: aliceblue;
-    color:black;
+    background-color:midnightblue;
+    color:whitesmoke;
     text-align: center;
-    padding: 2rem;
-    font-size: 13px;
+    padding: 5rem;
+    font-size: 20px;
 }
 
 .footer h5 {
-    color:black;
+    color:whitesmoke;
     margin-bottom: 0.5rem;
 }
 
@@ -137,26 +382,63 @@ img{
     margin: 0.3rem 0;
     opacity: 0.75;
 }
+.pastoral-care p{
+    text-align:center;
+    font-weight: bold;
+    font-style: italic;
+}
+.pastoral-care{
+    padding:50px;
+    background-color: honeydew;
+}
+.pastoral-care h3{
+    color:darkblue;
+    text-align: center;
+    font-size: 20px;
+}
+.pastor-image{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.pastor img{
+    width:300px;
+}
+a {
+    font-weight: bold;
+}
 @media (max-width: 768px) {
 
     .main-container {
         flex-direction: row;
         text-align: center;
-        gap:5px;
-        padding:10px;
+        gap:15px;
+        display:flex;
+        justify-content: space-between;
     }
-    .harmbuger span{
-        display: block;
+    body{
+        margin:8px;
+    }
+    .hamburger{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap:5px;
+        cursor: pointer;
+    }
+    .hamburger span{
+        display: block; 
         width: 25px;
         height: 3px;
         background-color: darkblue;
         border-radius: 3px;
-}
     }
     .links {
-        flex-direction: row;
-        gap: 2px;
-        justify-content: flex-end;
+        display: none;
+    }
+    #nav-links.show{
+        display:flex;
+        flex-direction: column;
     }
     .links li {
         font-size: 10px;
@@ -171,7 +453,7 @@ img{
     }
     .center,
     .text{
-        font-size:5px;
+        font-size:8px;
     }
 
     .container {
@@ -181,13 +463,44 @@ img{
     .pictorials {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .services {
-        padding: 10px;
+    .pastor img{
+        width: 150px;
+    }
+    .pastoral-care{
+        padding: 5px;
+        font-size: small;
+    }
+    .services{
+        padding:10px;
+    }
+    .container{
+        padding:5px;
+        font-size: 10px;
+        gap:10px;
+    }
+    h3{
+        font-size: 15px;
     }
 
     .welcome-message {
-        padding: 15px;
-        font-size: 15px;
+        padding: 5px;
+        font-size: 10px;
+        gap:5px;
+    }
+    .download-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h4{
+        font-size: 10px;
+    }
+    .book{
+        min-width:150px;
+    }
+    .book:hover .tag{
+        opacity:1;
+        transform: translate(0);
+    }
+    .footer{
+        font-size: 10px;
     }
 }
